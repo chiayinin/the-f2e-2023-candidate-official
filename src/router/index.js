@@ -1,5 +1,5 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHashHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
 // import NotFound404 from '@/views/NotFound404.vue';
 
 const routes = [
@@ -10,9 +10,9 @@ const routes = [
   },
   {
     path: '/:pathMatch(.*)*',
-    name: 'NotFound404',
-    // component: NotFound404,s
-  },
+    name: 'NotFound404'
+    // component: NotFound404,
+  }
 ];
 
 const base_url = import.meta.env.BASE_URL;
@@ -33,4 +33,4 @@ const router = createRouter({
 //   }
 //  });
 
-export default router
+export default router;
